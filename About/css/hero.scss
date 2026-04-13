@@ -1,0 +1,67 @@
+.hero-about {
+    position: relative;
+    .info {
+        width: 500px;
+        padding: 250px 0;
+    }
+    .h1 {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .btn {
+        background: #FA9021;
+        padding: 15px 30px; 
+        border-radius: 50px; 
+        transition: all 500ms ease;
+        color: #ffffff;
+        border: 0;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    .btn:hover {
+        cursor: pointer; 
+        transform: scale(1.1); 
+    }
+    img {
+        position: absolute;
+        right: -150px;
+        top: 0;
+    }
+}
+
+.work {
+    padding: 80px 0;
+    h2 {
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+    .blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+    .block {
+        width: 25%;
+        border-radius: 10px;
+        padding: 50px 35px;
+        background: #1C140F;
+    }
+    h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .badge {
+        border-radius: 7px;
+        padding: 10px 20px;
+    }
+    .purple {
+        background: #560F67;
+    }
+    .brown {
+        background: #31190D;
+    }
+    .green {
+        background: #192A1D;
+    }
+}
+

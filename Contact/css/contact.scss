@@ -1,0 +1,80 @@
+.hero-contacs {
+    h1 {
+        font-size: 33px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+    img {
+        margin: 80px 15%;
+        width: 70%;
+    }
+}
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        padding: 5px 0;
+    }
+    p {
+        text-align: center;
+        font-size: 13px;
+    }
+    form {
+        margin: 80px auto;
+        width: 600px; 
+        .inline {
+            display: flex;
+            justify-content: space-between;
+            > div {
+                width: 50%;
+            }
+            }
+        label {
+            color: #4F4F4F;
+            font-size: 14px;
+        }
+        input, textarea {
+            background: #2C2420;
+            border-radius: 10px;
+            border: 0.6px solid #CECECE; /*solid - твердая обводка*/
+            display: block;
+            width: 90%;
+            padding: 15px 10px;
+            outline: none;
+            color: #fff;
+            margin-top: 7px;
+            margin-bottom: 20px;
+        }
+        .one-line {
+            width: 96%;
+        }
+        textarea {
+            resize: none; /*не позволяет расстягивать атрибут*/
+            height: 200px;
+        }
+        button {
+            margin: 10px 0;
+            background: #c56a09;
+            padding: 15px 40px; /* отступы */
+            border-radius: 10px; /* закругление углов*/
+            transition: all 300ms ease;
+            color: #ffffff;
+            border: 0; /* рамки html*/
+            font-size: 17px;
+            float: right;
+        }
+        button:hover {
+            cursor: pointer; /* задает активацию при наведении курсора */
+            background: #743e05;
+        }
+    }
+}
