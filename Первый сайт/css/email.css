@@ -1,0 +1,66 @@
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.email .block {
+    background-color: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between; /*расстягивает все по максимальной ширине*/
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: #fff;
+    outline: none;
+    border: 0; /*обводка*/
+    border-radius: 5px;
+    width: 380px;
+    font-family: 'Poppins', sans-serif; /*Выбор шрифта, Отсутствие декоративных штрихов (засечки) на концах*/
+    font-weight: 400; /*Высота шрифта*/
+    padding: 20px 30px;
+    position: relative;
+    right: -80px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email .block input::placeholder { /*обращение к тексту внутри инпута*/
+    color: #898989;
+}
+
+.email .block button {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #FA9021;
+    padding: 9px 17px; /* отступы */
+    border-radius: 5px; /* закругление углов*/
+    transition: all 500ms ease; /* Transition позволяет определять переходное состояние между двумя состояниями элемента */
+    border: 0;
+    cursor: pointer; /*меняет внешний вид курсора мыши на «указательный палец» (руку) при наведении на элемент*/
+    padding: 13px 17px;
+    position: relative;
+    left: -30px;
+    z-index: 2;
+} 
+
+.email .block button:hover {
+    background: #b35e03;
+}

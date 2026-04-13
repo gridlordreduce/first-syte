@@ -1,0 +1,47 @@
+.project {
+    padding: 100px 0;
+}
+
+.project h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.project p {
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project .photo {
+    justify-content: space-around; /*находятся посередине и расстянуты по всем ширине*/
+    display: flex;
+    margin-bottom: 20px;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project .see-all {
+    color: #fff;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    font-size: 20px;
+    font-weight: 500; 
+    float: none;
+    display: block;
+    transition: all 500ms ease;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project .see-all:hover {
+    transform: scale(1.1);
+}

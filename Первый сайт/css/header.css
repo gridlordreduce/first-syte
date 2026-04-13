@@ -1,0 +1,57 @@
+header {    
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase; /* Uppercase - заглавные буквы*/
+    font-size: 29px; /* размер шрифта */
+    font-weight: 800; /* жирность */
+}
+
+header nav {
+    float: right; /* положение на странице */
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none; /* выбирает стиль */
+    display: flex; /* текст на одном уровне */
+    justify-content: space-between; /* расположение текста по всему контейнеру*/
+    z-index: 2;
+    position: relative; /*оставляет пустое пространство там, где он должен был быть, не влияя на расположение других элементов*/
+}
+
+header nav ul li {
+    display: inline-block; /* позволяет добавлять настройку текста */
+}
+
+header nav ul li.active ::after { /* After - после*/
+    content: '';
+    display: block;
+    background: #DC7000;
+    height: 5px;
+    width: 40px;
+    border-radius: 5px;
+    position: relative; /* Relative - способ сместить элемент относительно его исходного (нормального) места в документе, не нарушая при этом расположение соседних блоков*/
+    top: 10px;
+    left: -17px;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover { /* hover - часть правила, указывающая браузеру, к какому HTML-элементу (или группе элементов) применить стили (цвет, размер, расположение)*/
+    border-bottom: 5px solid #DC7000; /* Border - делает обводку снизу, solid - цвет обводки*/
+}
+
+header nav ul li.btn a {
+    background: #FA9021;
+    padding: 9px 17px; /* отступы */
+    border-radius: 5px; /* закругление углов*/
+    transition: all 500ms ease; /* Transition позволяет определять переходное состояние между двумя состояниями элемента */
+} /*Ease - отвечает за плавный переход (скорость выставляется в ms*/
+
+header nav ul li.btn a:hover {
+    background: #b35e03;
+}
